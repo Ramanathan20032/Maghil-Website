@@ -4,28 +4,31 @@
   font-family: "Roboto", sans-serif;
 */
 
-:root{
+:root {
   --font-primary: "Outfit", sans-serif;
   --font-secondary: "Poppins", sans-serif;
   --primary-color: #E52333;
-  --black-color: #000;
+  --black-color: #1f2937;
+  --sub-gray: #4b5563;
+  --white-color: #ffffff;
 }
 
-*{
+* {
   margin: 0%;
   padding: 0%;
   font-family: var(--font-primary);
   box-sizing: border-box;
+  color: var(--black-color);
 }
 
 
 /* NavBar */
 /* ============================================================================ */
-.navbar .logo-image{
+.navbar .logo-image {
   width: 140px;
 }
 
-.navbar .nav-btn-demo{
+.navbar .nav-btn-demo {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
@@ -34,12 +37,14 @@
   border: 2px solid var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
-.navbar .nav-btn-demo:hover{
+
+.navbar .nav-btn-demo:hover {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
 }
-.navbar .btn-demo{
+
+.navbar .btn-demo {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
@@ -48,25 +53,26 @@
   border: 2px solid var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
-.navbar .btn-demo:hover{
+
+.navbar .btn-demo:hover {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
 
 /* Media Query - NavBar */
 /* ============================================================================ */
-@media screen and (max-width: 992px){
-  .navbar .btn-demo{
+@media screen and (max-width: 992px) {
+  .navbar .btn-demo {
     display: none;
   }
 }
-@media screen and (max-width: 768px){
-  
-}
-@media screen and (max-width: 576px){
-  .navbar .logo-image{
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+  .navbar .logo-image {
     width: 115px;
   }
 }
@@ -74,50 +80,165 @@
 
 /* Banner */
 /* ============================================================================ */
-.banner-wrapper{
+.banner-wrapper {
   margin-top: 100px;
   width: 100%;
-  height: 90vh;
-}
-.banner-wrapper .hero-title{
-  font-family: var(--font-primary);
-  font-size: 48px;
-}
-.banner-wrapper .hero-paragraph{
-  font-family: var(--font-secondary);
+  height: 80vh;
 }
 
-.banner-wrapper .primary-btn{
+.banner-wrapper .typing-section {
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #4A4A4A;
+  display: inline-flex;
+  /* display: flex; */
+  align-items: center;
+  margin-bottom: 4px;
+  background: #FFF574;
+  border-radius: 10px;
+}
+
+.banner-wrapper .emoji {
+  margin-right: 7px;
+}
+
+.banner-wrapper .typing-text {
+  position: relative;
+  white-space: nowrap;
+}
+
+.banner-wrapper .static-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #606061;
+}
+
+.banner-wrapper .cursor {
+  display: inline-block;
+  width: 2px;
+  background: #ccc;
+  margin-left: 3px;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.banner-wrapper .hero-title {
+  font-family: var(--font-primary);
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  word-spacing: 5px;
+}
+
+.banner-wrapper .hero-paragraph {
+  font-family: var(--font-secondary);
+  color: var(--sub-gray);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 28px;
+  padding: 0 5px;
+}
+
+.banner-wrapper .primary-btn {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  background: #E52333;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--white-color);
   transition: all 0.3s ease-in-out;
 }
-.banner-wrapper .primary-btn:hover{
-  background-color: var(--primary-color);
-  color: #fff;
+
+.banner-wrapper .primary-btn:hover {
+  background-color: #98131e;
+  color: var(--white-color);
   cursor: pointer;
+}
+
+.banner-wrapper .image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 /* Media Query - Banner */
 /* ============================================================================ */
-@media screen and (max-width: 992px){
-  .banner-wrapper .hero-title{
+@media screen and (max-width: 1400px) {
+  .banner-wrapper .hero-title {
     font-size: 44px;
   }
 }
-@media screen and (max-width: 768px){
-  
-}
-@media screen and (max-width: 576px){
-  .banner-wrapper{
-    margin-top: 100px;
+
+@media screen and (max-width: 992px) {
+  .banner-wrapper {
     height: auto;
   }
+
+  .banner-wrapper .hero-title {
+    font-size: 40px;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .banner-wrapper .static-text {
+    font-size: 28px;
+  }
+
+  .banner-wrapper .hero-title {
+    font-size: 32px;
+  }
+
+  .banner-wrapper .hero-paragraph {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner-wrapper {
+    margin-top: 70px;
+    height: auto;
+  }
+
+  .banner-wrapper .hero-paragraph {
+    font-size: 17px;
+  }
+}
+
+
+/* Features */
+/* ============================================================================ */
+.features-wrapper {
+  width: 100%;
+}
+
+.features-wrapper .section-heading{
+  font-size: 44px;
+}
+
+.features-wrapper .row .card {
+  border: none;
+  /* border-radius: 10px; */
+}
+
+.features-wrapper .row .card .feature-image img {
+  border-radius: 10px;
+}
+
+
+/* Media Query - Features */
+/* ============================================================================ */
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}

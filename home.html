@@ -52,7 +52,7 @@
     <link rel="stylesheet" href="home.css" />
 
     <!-- Js File -->
-    <script src="home.js"></script>
+    <script src="home.js" defer></script>
   </head>
   <body>
     
@@ -62,7 +62,7 @@
       <div class="container navbar-container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img src="Images/Maghil New Logo with Tagline.jpg" alt="logo" class="logo-image">
+          <img src="Images/Maghil_New_Logo_with_Tagline-removebg-preview.png" alt="logo" class="logo-image">
         </a>
 
         <!-- Nav-items -->
@@ -71,7 +71,37 @@
         </button>
         <div class="collapse navbar-collapse pe-3 pe-md-0" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto m-lg-auto mb-2 mb-lg-0">
-            <!-- 1 - Solutions -->
+
+            <!-- 1 - Features -->
+            <li class="nav-item dropdown">
+              <!-- nav-link -->
+              <a class="navigation-link nav-link d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="pe-2">Features</span>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+              </a>
+              <ul class="dropdown-menu p-0">
+                <li>
+                  <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                    <span class="pe-3">Action</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                    <span class="pe-3">Another action</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                    <span class="pe-3">Something else here</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- 2 - Solutions -->
             <li class="nav-item dropdown">
               <!-- nav-link -->
               <a class="navigation-link nav-link d-flex justify-content-between align-items-center active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -130,45 +160,16 @@
               </ul>
             </li>
 
-            <!-- 2 - Features -->
-            <li class="nav-item dropdown">
-              <!-- nav-link -->
-              <a class="navigation-link nav-link d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="pe-2">Features</span>
-                <span><i class="fa-solid fa-caret-down"></i></span>
-              </a>
-              <ul class="dropdown-menu p-0">
-                <li>
-                  <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
-                    <span class="pe-3">Action</span>
-                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
-                    <span class="pe-3">Another action</span>
-                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
-                    <span class="pe-3">Something else here</span>
-                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- 3 - Price -->
-            <li class="nav-item">
-              <!-- nav-link -->
-              <a class="navigation-link nav-link" href="#">Price</a>
-            </li>
-
-            <!-- 4 - Industries -->
+            <!-- 3 - Industries -->
             <li class="nav-item dropdown">
               <!-- nav-link -->
               <a class="navigation-link nav-link" href="#">Industries</a>
+            </li>
+
+            <!-- 4 - Price -->
+            <li class="nav-item">
+              <!-- nav-link -->
+              <a class="navigation-link nav-link" href="#">Price</a>
             </li>
 
             <!-- 5 - Resourse -->
@@ -242,21 +243,188 @@
 
         <div class="banner-container d-flex align-items-center justify-content-between">
           <div class="row d-flex align-items-center justify-content-between">
-            <div class="col-12 col-md-6 col-lg-5 text-center text-sm-start">
-              <h1 class="hero-title">Streamlined POS Solutions for Your Restaurant!</h1>
-              <h6 class="hero-paragraph">Effortlessly manage every aspect of your restaurant operations, so you can concentrate on growing your brand like a true leader!</h6>
+            <div class="col-12  col-lg-5 text-center text-sm-start mt-2 py-3 py-md-0 content-section">
+              <!-- Type-Section -->
+              <div class="typing-section">
+                <span class="emoji">✌🏻</span>
+                <span class="typing-text">
+                  <span class="static-text">Mode</span>
+                  <span class="cursor">|</span>
+                </span>
+              </div>
+              <h1 class="hero-title">Effortless POS Solutions for Your Restaurant!</h1>
+              <h6 class="hero-paragraph">Streamline all aspects of your restaurant's operations, allowing you to focus on expanding your brand and leading with confidence!</h6>
               <div class="btn-container">
-                <a class="nav-link primary-btn" href="">Book Demo</a>
+                <a class="nav-link primary-btn" href="">Start a Free Trail</a>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-7 text-center">
-              <img src="Images/pos-1.png" class="img-fluid" alt="">
+            <div class="col-12  col-lg-7 text-center my-5 mt-lg-3 p-2 image-section">
+              <video class="img-fluid" muted autoplay loop>
+                <source src="Images/Maghil-Intro-crop.mp4">
+              </video>
             </div>
           </div>
         </div>
 
       </div>
     </div>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+    <!-- Features -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="features-wrapper">
+      <div class="container">
+        <div class="features-outer-container py-5">
+
+          <div class="section-title text-center pb-4">
+            <h2 class="section-heading">Core Offerings</h2>
+            <h5 class="section-desc">Smart Solutions, Powerful Results</h5>
+          </div>
+
+          <div class="row">
+            <!-- Dine-In Management -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/Digital-Dine-In.jpg" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>  
+                <div class="card-body text-center">
+                  <span>Dine-In Management</span>
+                </div>   
+              </div>
+            </div>
+
+            <!-- Order Management -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/Order-Management.jpg" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>     
+                <div class="card-body text-center">
+                  <span>Order Management</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Management -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/menu.avif" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>   
+                <div class="card-body text-center">
+                  <span>Menu Management</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Check In -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/Check-In.jpg" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>     
+                <div class="card-body text-center">
+                  <span>Check In</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Time Management -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/Time-Management.jpg" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>     
+                <div class="card-body text-center">
+                  <span>Time Management</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Report Insights -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/Report-Insights.jpg" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>     
+                <div class="card-body text-center">
+                  <span>Report Insights</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kitchen Display System -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/Kitchen Display System.jpg" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>     
+                <div class="card-body text-center">
+                  <span>Kitchen Display System</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cash Management -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">      
+                <div class="feature-container">
+                  <div class="feature-image position-relative">
+                    <img src="Images/Features/Cash-Management.jpg" alt="" class="img-fluid"/>
+                    <div class="card-img-overlay">
+                      <p class="overlay-text m-0 "></p>
+                    </div>
+                  </div> 
+                </div>     
+                <div class="card-body text-center">
+                  <span>Cash Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
   </body>
