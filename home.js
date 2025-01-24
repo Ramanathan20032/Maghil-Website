@@ -37,3 +37,27 @@ function typeEffect() {
 }
 
 typeEffect();
+
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Page - Up
+const pageUp = document.querySelector(".page-up");
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 120){
+    pageUp.classList.add("show")
+  }
+  else{
+    pageUp.classList.remove("show")
+  }
+})
+
+pageUp.addEventListener('click', (e) => {
+  e.preventDefault(); 
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth', 
+  });
+});
+
+
+
