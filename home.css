@@ -296,7 +296,8 @@ a {
     width: 230px;
     height: 230px;
   }
-  .page-up{
+
+  .page-up {
     bottom: 10px;
     right: 10px;
     width: 35px;
@@ -313,7 +314,7 @@ a {
 }
 
 .features-wrapper .features-outer-container {
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 60px;
 }
 
@@ -395,24 +396,24 @@ a {
 
 /* process */
 /* ============================================================================ */
-.process-wrapper{
+.process-wrapper {
   width: 100%;
   background-color: #efeff1;
 }
 
-.process-wrapper .process-container{
-  padding-top: 40px;
-  padding-bottom: 50px;
+.process-wrapper .process-container {
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
-.process-wrapper .section-heading{
+.process-wrapper .section-heading {
   font-family: var(--font-primary);
   font-size: 48px;
   font-weight: 500;
   word-spacing: 5px;
 }
 
-.process-wrapper .section-desc{
+.process-wrapper .section-desc {
   font-family: var(--font-secondary);
   color: var(--sub-gray);
   font-size: 18px;
@@ -422,25 +423,25 @@ a {
 /* Media Query - process */
 /* ============================================================================ */
 @media screen and (max-width: 1400px) {
-  .process-wrapper .section-heading{
+  .process-wrapper .section-heading {
     font-size: 44px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .process-wrapper .section-heading{
+  .process-wrapper .section-heading {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .process-wrapper .section-heading{
+  .process-wrapper .section-heading {
     font-size: 32px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .process-wrapper .section-desc{
+  .process-wrapper .section-desc {
     font-size: 17px;
   }
 }
@@ -448,9 +449,74 @@ a {
 
 /* Industries */
 /* ============================================================================ */
-.industry-wrapper{
-  
+.industry-wrapper {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.industry-wrapper .industry-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.industry-wrapper .section-heading {
+  font-family: var(--font-primary);
+  font-size: 48px;
+  font-weight: 500;
+  word-spacing: 5px;
+}
+
+.industry-wrapper .section-desc {
+  font-family: var(--font-secondary);
+  color: var(--sub-gray);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.industry-wrapper .industry-container .row .card {
+  min-height: 450px;
+}
+
+.industry-wrapper .industry-container .row .card img {
+  border-radius: 10px;
+}
+
+.industry-wrapper .industry-name {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.industry-wrapper .industry-desc {
+  font-family: var(--font-secondary);
+  color: var(--sub-gray);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* Media Query - Industries */
 /* ============================================================================ */
+@media screen and (max-width: 1400px) {
+  .industry-wrapper .section-heading {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .industry-wrapper .section-heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .industry-wrapper .section-heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .industry-wrapper .section-desc {
+    font-size: 17px;
+  }
+}
