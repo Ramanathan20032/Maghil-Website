@@ -32,6 +32,7 @@ a {
   width: 140px;
 }
 
+/* Nav-Btn */
 .navbar .nav-btn-demo {
   padding: 10px 20px;
   border-radius: 5px;
@@ -64,6 +65,107 @@ a {
   cursor: pointer;
 }
 
+/* Menu */
+
+/* link with dropdown */
+.navbar-nav .nav-item .main-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-item .main-link:hover i {
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+/* link without dropdown */
+.navbar-nav .navigation-link {
+  font-size: 17px;
+  color: var(--black-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .navigation-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar-nav .dropdown-menu {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  border: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2),
+    inset 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* enabling the drop down on the hover */
+@media (min-width: 769px) {
+  .navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* enable the dropn down on the click */
+@media (max-width: 768px) {
+  .navbar-nav .dropdown-menu {
+    display: none;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+  }
+
+  .navbar-nav .dropdown-menu.show {
+    display: block;
+  }
+}
+
+.navbar-nav .dropdown-item {
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 7px;
+  padding: 8px 12px;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #faf0f0;
+}
+
+/* drop-down item list */
+.navbar-nav .dropdown-item span {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .dropdown-item:hover span {
+  color: var(--primary-color);
+}
+
+/* drop-down Arrow Right fa-arrow-right */
+.navbar-nav .dropdown-item .fa-arrow-right {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-5px);
+  transition: all 0.2s ease;
+}
+
+.navbar-nav .dropdown-item:hover .fa-arrow-right {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+/* drop-down item icon list */
+.navbar-nav .dropdown-item span i {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .dropdown-item:hover span i {
+  color: var(--primary-color);
+}
 
 /* Media Query - NavBar */
 /* ============================================================================ */
@@ -73,11 +175,20 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-container {
+    padding: 0 8px;
+  }
+}
+
 
 @media screen and (max-width: 576px) {
   .navbar .logo-image {
     width: 115px;
+  }
+
+  .navbar-nav .navigation-link {
+    font-size: 16px;
   }
 }
 
@@ -680,14 +791,14 @@ a {
 .Achievement-wrapper .Achievement-container .content-section .banner-shadow {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
   background: #98D8EF;
   border-radius: 50%;
   z-index: 2;
-  filter: blur(100px);
+  filter: blur(130px);
   overflow: hidden;
 }
 
@@ -754,7 +865,7 @@ a {
 
 .solution-wrapper .section-desc {
   font-family: var(--font-secondary);
-  color: var(--sub-gray);
+  color: var(--primary-color);
   text-transform: capitalize;
   font-size: 18px;
   font-weight: 400;
@@ -780,7 +891,7 @@ a {
 
 .solution-wrapper .solution-card:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2),
-              inset 0 4px 6px rgba(255, 255, 255, 0.2);
+    inset 0 4px 6px rgba(255, 255, 255, 0.2);
   outline: 1px solid #1f2937;
 }
 
@@ -1111,4 +1222,29 @@ a {
   .Testimonial-wrapper .testimonial-card .testimonial-body {
     font-size: 16px;
   }
+}
+
+
+/* Media Query - Footer */
+/* =============================================================== */
+.footer-wrapper {
+  width: 100%;
+  /* background: #000; */
+}
+
+.footer-wrapper .footer-container {
+  padding: 60px 0px;
+  border: 2px solid #1f2937;
+}
+
+.footer-wrapper .section-heading {
+  /* color: #efeff1; */
+}
+
+.footer-wrapper .links {
+  padding: 0 16px;
+}
+
+.footer-wrapper .links .link {
+  list-style: none;
 }
