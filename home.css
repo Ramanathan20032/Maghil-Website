@@ -372,11 +372,15 @@ a {
   visibility: hidden;
   transform: translateY(300px);
   border-radius: 50%;
-  background: #98D8EF;
-  color: var(--black-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
   cursor: pointer;
   z-index: 1000;
   transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+
+.fa-angle-up {
+  color: var(--white-color);
 }
 
 .page-up.show {
@@ -657,6 +661,30 @@ a {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.industry-wrapper .industry-content a i {
+  font-size: 20px;
+}
+
+.industry-wrapper .industry-content .industry-name,
+.industry-wrapper .industry-content i {
+  transition: color 0.3s ease;
+}
+
+.industry-wrapper .industry-content a{
+  transform: scale(1);
+}
+
+.industry-wrapper .industry-content a:hover .industry-name,
+.industry-wrapper .industry-content a:hover i {
+  color: var(--primary-color);
+}
+
+.industry-wrapper .industry-content a:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .industry-wrapper .industry-desc {
@@ -1045,7 +1073,7 @@ a {
 }
 
 .requestDemo-Wrapper a:hover {
-  background: #4b5563;
+  background: var(--primary-color);
   color: #efeff1;
 }
 
@@ -1060,7 +1088,7 @@ a {
   .requestDemo-Wrapper .requestDemo-container {
     padding: 50px 0;
   }
-  
+
   .requestDemo-Wrapper h1 {
     font-size: 36px;
   }
@@ -1078,11 +1106,11 @@ a {
   .requestDemo-Wrapper p {
     font-size: 17px;
   }
-  .requestDemo-Wrapper a{
+
+  .requestDemo-Wrapper a {
     font-size: 14px;
   }
 }
-
 
 
 /* Logo-Slider */
@@ -1418,7 +1446,7 @@ a {
   color: var(--primary-color);
 }
 
-.newsletter {
+.Powered-wrapper .newsletter {
   display: flex;
   align-items: center;
   border: 1px solid #333;
@@ -1429,7 +1457,7 @@ a {
   margin: 0 auto;
 }
 
-.newsletter input {
+.Powered-wrapper .newsletter input {
   flex: 1;
   min-width: 0;
   padding: 10px;
@@ -1438,7 +1466,7 @@ a {
   font-size: 16px;
 }
 
-.newsletter button {
+.Powered-wrapper .newsletter button {
   background-color: #333;
   color: white;
   border: none;
@@ -1453,11 +1481,11 @@ a {
   min-width: 40px;
 }
 
-.newsletter button i {
+.Powered-wrapper .newsletter button i {
   font-size: 16px !important;
 }
 
-.newsletter button:hover {
+.Powered-wrapper .newsletter button:hover {
   background-color: #1f2937;
 }
 
