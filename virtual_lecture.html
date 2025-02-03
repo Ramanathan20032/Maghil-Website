@@ -231,8 +231,8 @@
           <div class="overlay-2"></div>
 
           <h4 class="banner-text">Virtual Lecture</h4>
-          <h3 class="banner-tagLine">Choose your convenient pricing plan!</h3>
-          <h6 class="banner-desc">It doesn’t matter which stage of the tech journey you are in, we can help you get started with us.</h6>
+          <h3 class="banner-tagLine">Learn Anytime, Anywhere – Your Knowledge, Your Pace!</h3>
+          <h6 class="banner-desc">No matter your experience level, our virtual lectures are designed to guide you through your learning journey seamlessly.</h6>
 
         </div>
       </div>
@@ -240,7 +240,37 @@
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
 
+    <!-- head-Banner -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="virtual-Lecture-wrapper py-5">
+      <div class="container">
+        <div class="virtual-Lecture-container">
 
+          <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <div class="media-wrapper" onclick="showVideo()">
+              <img src="Images/Features/Cash-Management.jpg" alt="Video Thumbnail" class="thumbnail">
+              <i class="fa-solid fa-play"></i>
+              <video class="video-container" id="videoPlayer" controls>
+                <source src="Images/Virtual-Lecture-Page/Maghil Cash Management Final .mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="p-2">
+              <h5 class="text-center my-2">Cash Management</h5>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="fullscreen-overlay" id="fullscreenOverlay" style="display: none;" onclick="closeVideo()">
+      <button class="close-btn d-block" onclick="closeVideo(event)"><i class="fa-solid fa-close"></i></button>
+      <video class="fullscreen-video" id="fullscreenVideo" controls onclick="event.stopPropagation()">
+        <source src="Images/Virtual-Lecture-Page/Maghil Cash Management Final .mp4" type="video/mp4">
+      </video>
+    </div>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
 
     <!-- Footer -->

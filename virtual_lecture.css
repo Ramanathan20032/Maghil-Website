@@ -244,7 +244,7 @@ a {
 }
 
 .head-Banner-wrapper .head-Banner-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/About-Page/page-title.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/Virtual-Lecture-Page/banner.jpg) no-repeat center;
   background-size: cover;
   min-height: 400px;
   width: 100%;
@@ -263,7 +263,7 @@ a {
 }
 
 .head-Banner-wrapper .head-Banner-container .overlay-1 {
-  background: url(Images/About-Page/overlay-1.png) no-repeat center;
+  background: url(Images/Virtual-Lecture-Page/overlay-1.png) no-repeat center;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -275,7 +275,7 @@ a {
 }
 
 .head-Banner-wrapper .head-Banner-container .overlay-2 {
-  background: url(Images/About-Page/overlay-2.png) no-repeat center;
+  background: url(Images/Virtual-Lecture-Page/overlay-2.png) no-repeat center;
   background-size: contain;
   position: absolute;
   bottom: 0;
@@ -390,6 +390,85 @@ a {
 
   .head-Banner-wrapper .banner-desc {
     font-size: 16px;
+  }
+}
+
+
+/* virtual-Lecture */
+/* ============================================================================ */
+.media-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  position: relative;
+}
+
+.fa-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  border: 5px solid var(--white-color);
+  border-radius: 50%;
+  padding: 20px 20px 20px 25px;
+  color: var(--white-color);
+}
+
+.video-container {
+  display: none;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.fullscreen-video {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* Media Query - virtual-Lecture */
+/* ============================================================================ */
+@media screen and (max-width: 576px){
+  .fa-play {
+    font-size: 25px;
+    border: 4px solid var(--white-color);
+    border-radius: 50%;
+    padding: 17px 17px 17px 22px;
+  }
+  .fullscreen-video {
+    position: relative;
+    width: 95%;
+    /* max-width: 900px; */
   }
 }
 
