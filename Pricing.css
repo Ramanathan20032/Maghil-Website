@@ -240,7 +240,7 @@ a {
 }
 
 .head-Banner-wrapper .head-Banner-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/banner.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/Price-Page/banner.jpg) no-repeat center;
   background-size: cover;
   min-height: 400px;
   width: 100%;
@@ -259,7 +259,7 @@ a {
 }
 
 .head-Banner-wrapper .head-Banner-container .overlay-1 {
-  background: url(Images/overlay-1.png) no-repeat center;
+  background: url(Images/Price-Page/overlay-1.png) no-repeat center;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -271,7 +271,7 @@ a {
 }
 
 .head-Banner-wrapper .head-Banner-container .overlay-2 {
-  background: url(Images/overlay-2.png) no-repeat center;
+  background: url(Images/Price-Page/overlay-2.png) no-repeat center;
   background-size: contain;
   position: absolute;
   bottom: 0;
