@@ -394,6 +394,67 @@ a {
 }
 
 
+/* Book-Demo */
+/* ============================================================================ */
+.demo-wrapper {
+  width: 100%;
+}
+
+.demo-wrapper .demo-container .image-section img {}
+
+.demo-wrapper .demo-container .content-section h2 {
+  font-size: 32px;
+}
+
+.demo-wrapper .demo-container .content-section p {
+  font-size: 18px;
+}
+
+.demo-wrapper .demo-container .form-label {}
+
+.demo-wrapper .demo-container .form-control {
+  border-radius: 10px;
+}
+
+.demo-wrapper .demo-container .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--primary-color);
+}
+
+
+/* Book-Demo - Media Query */
+/* ============================================================================ */
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .demo-wrapper .demo-container .content-section h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  .demo-wrapper .demo-container .content-section p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .demo-wrapper .demo-container .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .demo-wrapper .demo-container .content-section h2 {
+    font-size: 24px;
+  }
+}
+
+
 /* Footer */
 /* =============================================================== */
 .footer-wrapper {
