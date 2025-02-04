@@ -394,6 +394,98 @@ a {
 }
 
 
+/* hardware-software */
+/* =============================================================== */
+.advanced-integration-wrapper {
+  width: 100%;
+}
+
+.advanced-integration-wrapper .section-1 {
+  margin-bottom: 20px;
+}
+
+.advanced-integration-wrapper .img-section img {
+  border-radius: 15px;
+}
+
+.advanced-integration-wrapper .content-section .heading-content {
+  padding-bottom: 10px;
+}
+
+.advanced-integration-wrapper .content-section .heading-content h3 {
+  font-size: 28px;
+  font-family: var(--font-primary);
+  margin-bottom: 7px;
+  color: var(--primary-color);
+}
+
+.advanced-integration-wrapper .content-section .heading-content h6 {
+  font-family: var(--font-primary);
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.advanced-integration-wrapper .content-section .sub-content p {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.advanced-integration-wrapper .content-section .sub-content h6 {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.advanced-integration-wrapper .parent-overlay {
+  position: relative;
+}
+
+.advanced-integration-wrapper .child-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  filter: blur(200px);
+}
+
+
+/* hardware-software - Media Query */
+/* ============================================================================ */
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+  .advanced-integration-wrapper .content-section .heading-content h3 {
+    font-size: 28px;
+  }
+
+  .advanced-integration-wrapper .content-section .heading-content h6 {
+    font-size: 18px;
+  }
+
+  .advanced-integration-wrapper .content-section .sub-content p {
+    font-size: 16px;
+  }
+
+  .advanced-integration-wrapper .content-section .sub-content h6 {
+    font-size: 18px;
+  }
+
+  .advanced-integration-wrapper .child-overlay {
+    width: 150px;
+    height: 150px;
+    filter: blur(160px);
+  }
+}
+
+
 /* Footer */
 /* =============================================================== */
 .footer-wrapper {
