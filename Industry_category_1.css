@@ -393,6 +393,23 @@ a {
   }
 }
 
+/* .section-card{
+  max-width: 400px;
+}
+.section-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.section-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.section-card:hover {
+  transform: translateY(-5px);
+} */
+
 
 /* Footer */
 /* =============================================================== */
