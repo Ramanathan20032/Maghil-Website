@@ -404,8 +404,15 @@ a {
   margin-bottom: 20px;
 }
 
+.hardware-software-wrapper .img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hardware-software-wrapper .img-section img {
-  border-radius: 15px;
+  border-radius: 20px;
+  max-width: 360px;
 }
 
 .hardware-software-wrapper .content-section .heading-content {
@@ -457,11 +464,25 @@ a {
 
 /* hardware-software - Media Query */
 /* ============================================================================ */
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  .hardware-software-wrapper .img-section img {
+    min-width: 660px;
+  }
+}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .hardware-software-wrapper .img-section img {
+    min-width: 510px;
+  }
+}
 
 @media screen and (max-width: 576px) {
+  .hardware-software-wrapper .img-section img {
+    min-width: unset;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .hardware-software-wrapper .content-section .heading-content h3 {
     font-size: 28px;
   }
