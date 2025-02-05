@@ -414,6 +414,7 @@ a {
 
 .demo-wrapper .demo-container .form-control {
   border-radius: 10px;
+  border: 1px solid var(--black-color);
 }
 
 .demo-wrapper .demo-container .form-control:focus {
