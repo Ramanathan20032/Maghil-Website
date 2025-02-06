@@ -548,7 +548,7 @@ a {
   margin-bottom: 24px;
 }
 
-.core-values-wrapper .core-values-container .section-heading{
+.core-values-wrapper .core-values-container .section-heading {
   font-family: var(--font-primary);
   font-size: 48px;
   font-weight: 500;
@@ -561,8 +561,8 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--primary-color);
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   filter: blur(200px);
 }
@@ -573,14 +573,14 @@ a {
 }
 
 .core-values-wrapper .core-value {
-  border: 0.5px solid var(--black-color);
+  /* border: 0.5px solid var(--black-color); */
   border-radius: 10px;
   padding: 15px;
   text-align: center;
   min-height: 260px;
-  box-shadow: 
-    5px 5px 10px rgba(0, 0, 0, 0.3), 
-    10px 10px 15px rgba(0, 0, 0, 0.2), 
+  box-shadow:
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    2px 2px 4px rgba(0, 0, 0, 0.2),
     inset -3px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -604,19 +604,19 @@ a {
 /* Media Query - Core-values */
 /* =============================================================== */
 @media screen and (max-width: 1400px) {
-  .core-values-wrapper .core-values-container .section-heading{
+  .core-values-wrapper .core-values-container .section-heading {
     font-size: 44px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .core-values-wrapper .core-values-container .section-heading{
+  .core-values-wrapper .core-values-container .section-heading {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .core-values-wrapper .core-values-container .section-heading{
+  .core-values-wrapper .core-values-container .section-heading {
     font-size: 32px;
   }
 
@@ -626,6 +626,7 @@ a {
     border-radius: 50%;
     filter: blur(160px);
   }
+
   .core-values-wrapper .core-value h3 {
     font-size: 24px;
   }
@@ -644,7 +645,7 @@ a {
     width: 30px;
     height: 1000px;
     border-radius: 0%;
-    filter: blur(110px);
+    filter: blur(150px);
   }
 
   .core-values-wrapper .core-value {
@@ -659,10 +660,11 @@ a {
   background-color: #fff;
   color: var(--black-color);
   font-weight: 600;
-  border: 0.5px solid var(--black-color);
+  /* border: 0.5px solid var(--primary-color); */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
 }
 
-.faq-wrapper .section-heading{
+.faq-wrapper .section-heading {
   font-family: var(--font-primary);
   font-size: 48px;
   font-weight: 500;
@@ -676,7 +678,7 @@ a {
 
 .faq-wrapper .faq-icon {
   color: var(--primary-color);
-  transition: color 0.3s ease-in-out; 
+  transition: color 0.3s ease-in-out;
 }
 
 .faq-wrapper .accordion-button:not(.collapsed) .faq-icon {
@@ -684,14 +686,12 @@ a {
 }
 
 .faq-wrapper .accordion-button::after {
-  filter: brightness(0) saturate(100%) invert(16%) sepia(97%) saturate(4481%) 
-          hue-rotate(349deg) brightness(96%) contrast(96%);
+  filter: brightness(0) saturate(100%) invert(16%) sepia(97%) saturate(4481%) hue-rotate(349deg) brightness(96%) contrast(96%);
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .faq-wrapper .accordion-button:not(.collapsed)::after {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) 
-          hue-rotate(0deg) brightness(0%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
 .faq-wrapper .accordion-button:focus {
@@ -712,26 +712,24 @@ a {
 /* Media Query - FAQ */
 /* =============================================================== */
 @media screen and (max-width: 1400px) {
-  .faq-wrapper .section-heading{
+  .faq-wrapper .section-heading {
     font-size: 44px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .faq-wrapper .section-heading{
+  .faq-wrapper .section-heading {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .faq-wrapper .section-heading{
+  .faq-wrapper .section-heading {
     font-size: 28px;
   }
 }
 
-@media screen and (max-width: 576px) {
-
-}
+@media screen and (max-width: 576px) {}
 
 /* Footer */
 /* =============================================================== */
