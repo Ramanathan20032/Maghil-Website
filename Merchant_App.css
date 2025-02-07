@@ -394,6 +394,100 @@ a {
 }
 
 
+/* Merchant App  */
+/* =============================================================== */
+.Merchant-App-wrapper {
+  width: 100%;
+}
+.Merchant-App-wrapper .row {
+  padding: 10px 0px;
+  margin-bottom: 48px;
+}
+.Merchant-App-wrapper .section-1 {
+  margin-bottom: 20px;
+}
+.Merchant-App-wrapper .img-section img {
+  border-radius: 15px;
+}
+.Merchant-App-wrapper .content-section.left {
+  padding-left: 30px;
+}
+.Merchant-App-wrapper .content-section .heading-content {
+  padding-bottom: 10px;
+}
+.Merchant-App-wrapper .content-section .heading-content h3 {
+  font-size: 28px;
+  font-family: var(--font-primary);
+  margin-bottom: 7px;
+  color: var(--primary-color);
+}
+.Merchant-App-wrapper .content-section .heading-content h6 {
+  font-family: var(--font-primary);
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.Merchant-App-wrapper .content-section .sub-content p {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.Merchant-App-wrapper .content-section .sub-content h6 {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  line-height: 1.5;
+}
+.Merchant-App-wrapper .parent-overlay {
+  position: relative;
+}
+.Merchant-App-wrapper .child-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  filter: blur(200px);
+}
+
+
+/* Merchant App - Media Query */
+/* ============================================================================ */
+@media screen and (max-width: 992px) {
+  .Merchant-App-wrapper .row {
+    padding: 0px;
+  }
+  .Merchant-App-wrapper .content-section.left {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {
+  .Merchant-App-wrapper .row {
+    margin-bottom: 36px;
+  }
+  .Merchant-App-wrapper .content-section .heading-content h3 {
+    font-size: 28px;
+  }
+  .Merchant-App-wrapper .content-section .heading-content h6 {
+    font-size: 18px;
+  }
+  .Merchant-App-wrapper .content-section .sub-content p {
+    font-size: 16px;
+  }
+  .Merchant-App-wrapper .content-section .sub-content h6 {
+    font-size: 18px;
+  }
+  .Merchant-App-wrapper .child-overlay {
+    width: 150px;
+    height: 150px;
+    filter: blur(160px);
+  }
+}
+
+
 /* Footer */
 /* =============================================================== */
 .footer-wrapper {
