@@ -359,36 +359,6 @@ a {
   overflow: hidden;
 }
 
-.page-up {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(50px);
-  border-radius: 50%;
-  background-color: var(--black-color);
-  color: var(--white-color);
-  cursor: pointer;
-  z-index: 1000;
-  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
-}
-
-.fa-angle-up {
-  color: var(--white-color);
-}
-
-.page-up.show {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Media Query - Banner */
 /* ============================================================================ */
 @media screen and (max-width: 1400px) {
@@ -408,11 +378,6 @@ a {
 
   .banner-shadow-2 {
     bottom: 0%;
-  }
-
-  .page-up {
-    width: 40px;
-    height: 40px;
   }
 }
 
@@ -464,14 +429,6 @@ a {
     bottom: 0%;
     width: 150px;
     height: 150px;
-  }
-
-  .page-up {
-    bottom: 10px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
-    font-size: 12px;
   }
 }
 
@@ -1587,5 +1544,58 @@ a {
 
   .Powered-wrapper .copy-right .p1 {
     padding: 0 3px;
+  }
+}
+
+
+/* Page-Up */
+/* =============================================================== */
+.page-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  border-radius: 50%;
+  background-color: var(--black-color); 
+  color: var(--white-color);
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.page-up.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fa-angle-up {
+  color: var(--white-color);
+}
+
+
+/* Media Query - Page-Up */
+/* =============================================================== */
+@media screen and (max-width: 992px){
+  .page-up {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 768px){}
+@media screen and (max-width: 576px){
+  .page-up {
+    bottom: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
   }
 }
