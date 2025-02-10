@@ -4,6 +4,11 @@
   font-family: "Roboto", sans-serif;
 */
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
 :root {
   --font-primary: "Outfit", sans-serif;
   --font-secondary: "Poppins", sans-serif;
