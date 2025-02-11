@@ -713,6 +713,16 @@ a {
     width: 200px;
     height: 200px;
   }
+  .industry-wrapper .industry-name{
+    font-size: 17px;
+  }
+  .industry-wrapper .industry-content{
+    font-size: 17px;
+  }
+  .industry-wrapper .section{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
 }
 
 
