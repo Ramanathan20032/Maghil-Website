@@ -39,8 +39,8 @@ const messages = document.querySelector(".chatbot-messages");
 
 // Toggle chatbot window
 chatbotToggle.addEventListener("click", () => {
-  chatbotWindow.style.display =
-    chatbotWindow.style.display === "none" ? "block" : "none";
+  const isHidden = getComputedStyle(chatbotWindow).display === "none";
+  chatbotWindow.style.display = isHidden ? "block" : "none";
 });
 
 // Close chatbot window
