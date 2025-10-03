@@ -176,7 +176,7 @@ a {
 }
 
 /* enabling the drop down on the hover */
-@media (min-width: 769px) {
+@media (min-width: 1201px) {
   .navbar-nav .nav-item:hover .dropdown-menu {
     display: block;
     visibility: visible;
@@ -185,7 +185,7 @@ a {
 }
 
 /* enable the dropn down on the click */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .navbar-nav .dropdown-menu {
     display: none;
     position: static;
